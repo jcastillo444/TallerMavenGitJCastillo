@@ -25,23 +25,17 @@ public class App {
         Long number2 = Long.valueOf( textNumber2 );
 
         BasicCalculator calculator = new BasicCalculator();
-        Long result = calculator.sum( number1, number2 );
 
+        Long result = calculator.sum( number1, number2 );
         System.out.println( number1 + " + " + number2 + " = " + result );
 
-        BasicCalculator calculatorR = new BasicCalculator();
         Long resultR = calculator.resta( number1, number2 );
-
         System.out.println( number1 + " - " + number2 + " = " + resultR );
 
-        BasicCalculator calculatorM = new BasicCalculator();
         Long resultM = calculator.multiplicacion( number1, number2 );
-
         System.out.println( number1 + " * " + number2 + " = " + resultM );
 
-        BasicCalculator calculatorD = new BasicCalculator();
         Long resultD = calculator.division( number1, number2 );
-
         System.out.println( number1 + " / " + number2 + " = " + resultD );
     }
 }
